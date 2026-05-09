@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Penjual - The BabyBloom</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    /* =========================
+       MENU TITLE SAMA INDEX
+    ========================= */
+
+    .menu-title{
+      text-decoration: none;
+      background: transparent !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .menu-title h3{
+      background: transparent !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin: 0;
+      color: #ff5c93;
+      font-size: 28px;
+      font-family: 'Lilita One', cursive;
+    }
+
+    .menu-title:hover{
+      background: transparent !important;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+
+    /* =========================
+       KOTAK KONTAK
+    ========================= */
+
+    .kontak-box{
+      background: #fffdfd;
+      border: 2px solid #ffd6e0;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(255,182,193,0.18);
+    }
+
+    .kontak-box h2{
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .deskripsi{
+      font-size: 17px;
+      line-height: 1.8;
+      color: #666;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* =========================
+       CARD KONTAK
+    ========================= */
+
+    .kontak-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 20px;
+      margin-bottom: 35px;
+    }
+
+    .kontak-card{
+      background: linear-gradient(
+        135deg,
+        #fff0f5,
+        #ffe4ec
+      );
+
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(255,182,193,0.2);
+    }
+
+    .kontak-card:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 10px 22px rgba(255,105,180,0.25);
+    }
+
+    .kontak-icon{
+      font-size: 45px;
+      margin-bottom: 12px;
+    }
+
+    .kontak-card h4{
+      color: #ff4f87;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .kontak-card p{
+      color: #666;
+    }
+
+    /* =========================
+       HUBUNGI KAMI
+    ========================= */
+
+    .hubungi-box{
+      background: linear-gradient(
+        135deg,
+        #ffd6e0,
+        #ffeaf0
+      );
+
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .hubungi-box h3{
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+
+    .hubungi-box p{
+      color: #666;
+      margin-bottom: 18px;
+    }
+
+    /* =========================
+       BUTTON SOSMED
+    ========================= */
+
+    .sosmed-container{
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .sosmed-button{
+      text-decoration: none;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(255,105,180,0.3);
+    }
+
+    .sosmed-button:hover{
+      transform: scale(1.05);
+    }
+
+    .wa{
+      background: #25D366;
+    }
+
+    .ig{
+      background: #ff4f87;
+    }
+
+    .email{
+      background: #ff9f43;
+    }
+
+    /* =========================
+       JAM OPERASIONAL
+    ========================= */
+
+    .jam{
+      background: #fff0f5;
+      padding: 18px;
+      border-radius: 18px;
+      text-align: center;
+      margin-top: 25px;
+      color: #666;
+      font-size: 17px;
+    }
+
+    /* =========================
+       MAP
+    ========================= */
+
+    .map-box{
+      margin-top: 35px;
+      text-align: center;
+    }
+
+    .map-box h3{
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .map-img{
+      width: 100%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(255,182,193,0.25);
+      margin-bottom: 18px;
+    }
+
+    .map-box p{
+      color: #666;
+      line-height: 1.8;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header-image">
+    <img src="Desain tanpa judul.png" alt="The BabyBloom Header">
+  </header>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+
+    <!-- MENU TITLE -->
+    <a href="index.html" class="menu-title">
+      <h3>📋 Menu</h3>
+    </a>
+
+    <!-- MENU -->
+    <a href="profil.html">👩 Data Pribadi</a>
+
+    <a href="produk1.html">🍼 Produk 0-12 Bulan</a>
+
+    <a href="produk2.html">🧸 Produk 13-24 Bulan</a>
+
+    <a href="kontak.html">📞 Kontak Penjual</a>
+
+    <a href="faq.html">❓ FAQ</a>
+
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <div class="kontak-box">
+
+      <h2>📞 Kontak Penjual</h2>
+
+      <p class="deskripsi">
+        Jika Anda memiliki pertanyaan mengenai produk,
+        pemesanan, pengiriman, atau informasi lainnya,
+        silakan hubungi BabyBloom Shop melalui kontak berikut 💕
+      </p>
+
+      <!-- CARD KONTAK -->
+      <div class="kontak-container">
+
+        <div class="kontak-card">
+          <div class="kontak-icon">📱</div>
+          <h4>No Handphone</h4>
+          <p>081573806126</p>
+        </div>
+
+        <div class="kontak-card">
+          <div class="kontak-icon">📧</div>
+          <h4>Email</h4>
+          <p>thebabybloom@gmail.com</p>
+        </div>
+
+        <div class="kontak-card">
+          <div class="kontak-icon">📸</div>
+          <h4>Instagram</h4>
+          <p>@thebabybloom</p>
+        </div>
+
+        <div class="kontak-card">
+          <div class="kontak-icon">📍</div>
+          <h4>Alamat</h4>
+          <p>Ciledug, Tangerang</p>
+        </div>
+
+      </div>
+
+      <!-- HUBUNGI -->
+      <div class="hubungi-box">
+
+        <h3>💌 Hubungi Kami</h3>
+
+        <p>
+          Customer service kami siap membantu Anda
+          dengan ramah dan cepat ✨
+        </p>
+
+        <div class="sosmed-container">
+
+          <a href="https://wa.me/6281573806126"
+             target="_blank"
+             class="sosmed-button wa">
+            💬 WhatsApp
+          </a>
+
+          <a href="https://www.instagram.com/babybloomshop"
+             target="_blank"
+             class="sosmed-button ig">
+            📸 Instagram
+          </a>
+
+          <a href="mailto:babybloom@gmail.com"
+             class="sosmed-button email">
+            📧 Email
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- JAM -->
+      <div class="jam">
+        🕒 <b>Jam Operasional</b><br>
+        Senin - Minggu : 08.00 - 21.00 WIB
+      </div>
+
+      <!-- MAP -->
+      <div class="map-box">
+
+        <h3>📍 Lokasi Toko</h3>
+
+        <img src="mapsbabybloom.png"
+             alt="Lokasi BabyBloom"
+             class="map-img">
+
+        <p>
+          BabyBloom Shop berlokasi di Ciledug, Tangerang
+          dan melayani pengiriman ke seluruh Indonesia 🚚✨
+        </p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

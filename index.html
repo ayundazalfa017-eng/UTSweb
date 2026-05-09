@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The BabyBloom</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    /* =========================
+       MENU TRANSPARAN
+    ========================= */
+
+    .menu-title{
+      text-decoration: none;
+      background: transparent !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+
+    .menu-title h3{
+      background: transparent !important;
+      box-shadow: none !important;
+      color: #ff5c93;
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .menu-title:hover{
+      background: transparent !important;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+
+    /* =========================
+       STATISTIK CHART
+    ========================= */
+
+    .stats-box{
+      background: linear-gradient(
+        135deg,
+        #fff0f5,
+        #ffe4ec
+      );
+
+      padding: 25px;
+      border-radius: 25px;
+      margin-top: 30px;
+      box-shadow: 0 8px 20px rgba(255,182,193,0.2);
+    }
+
+    .stats-box h3{
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ff4f87;
+      font-size: 30px;
+    }
+
+    .chart-container{
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .chart-item{
+      width: 100%;
+    }
+
+    .chart-label{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #666;
+      font-size: 17px;
+    }
+
+    .chart-bar{
+      width: 100%;
+      height: 24px;
+      background: #ffd6e0;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+    .chart-fill{
+      height: 100%;
+      border-radius: 30px;
+      animation: growBar 2s ease;
+    }
+
+    /* WARNA BAR */
+
+    .produk{
+      width: 70%;
+      background: linear-gradient(
+        90deg,
+        #ff8fb1,
+        #ff4f87
+      );
+    }
+
+    .pelanggan{
+      width: 90%;
+      background: linear-gradient(
+        90deg,
+        #ffb347,
+        #ff8c42
+      );
+    }
+
+    .respon{
+      width: 100%;
+      background: linear-gradient(
+        90deg,
+        #7ed6df,
+        #22a6b3
+      );
+    }
+
+    /* ANIMASI */
+
+    @keyframes growBar{
+      from{
+        width: 0;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header-image">
+    <img src="Desain tanpa judul.png" alt="The BabyBloom Header">
+  </header>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+
+    <!-- MENU TITLE -->
+    <a href="index.html" class="menu-title">
+      <h3>📋 Menu</h3>
+    </a>
+
+    <!-- MENU -->
+    <a href="profil.html">👩 Data Pribadi</a>
+
+    <a href="produk1.html">🍼 Produk 0-12 Bulan</a>
+
+    <a href="produk2.html">🧸 Produk 13-24 Bulan</a>
+
+    <a href="kontak.html">📞 Kontak Penjual</a>
+
+    <a href="faq.html">❓ FAQ</a>
+
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- WELCOME BOX -->
+    <div class="welcome-box">
+
+      <h2>Selamat Datang di The BabyBloom ✨</h2>
+
+      <p>
+        BabyBloom Shop menyediakan berbagai perlengkapan bayi 
+        dengan kualitas terbaik, aman digunakan, dan harga terjangkau.
+      </p>
+
+      <p>
+        Kami menghadirkan berbagai kebutuhan bayi mulai dari susu, 
+        mainan edukasi, perlengkapan mandi, pakaian bayi, hingga 
+        aksesoris lucu untuk si kecil.
+      </p>
+
+      <!-- STATISTIK -->
+      <div class="stats-box">
+
+        <h3>📊Shop Performance</h3>
+
+        <div class="chart-container">
+
+          <!-- PRODUK -->
+          <div class="chart-item">
+
+            <div class="chart-label">
+              🍼 Produk Bayi
+              <span>100+</span>
+            </div>
+
+            <div class="chart-bar">
+              <div class="chart-fill produk"></div>
+            </div>
+
+          </div>
+
+          <!-- PELANGGAN -->
+          <div class="chart-item">
+
+            <div class="chart-label">
+              👨‍👩‍👧 Pelanggan
+              <span>500+</span>
+            </div>
+
+            <div class="chart-bar">
+              <div class="chart-fill pelanggan"></div>
+            </div>
+
+          </div>
+
+          <!-- RESPON -->
+          <div class="chart-item">
+
+            <div class="chart-label">
+              ⚡ Respon Cepat
+              <span>24 Jam</span>
+            </div>
+
+            <div class="chart-bar">
+              <div class="chart-fill respon"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- KATEGORI -->
+      <div class="kategori-box">
+
+        <h3>🛍️ Kategori Favorit</h3>
+
+        <div class="kategori-container">
+
+          <div class="kategori-card">
+            <div class="icon">🍼</div>
+            <p>Susu Bayi</p>
+          </div>
+
+          <div class="kategori-card">
+            <div class="icon">🧸</div>
+            <p>Mainan Bayi</p>
+          </div>
+
+          <div class="kategori-card">
+            <div class="icon">👕</div>
+            <p>Pakaian Bayi</p>
+          </div>
+
+          <div class="kategori-card">
+            <div class="icon">🛁</div>
+            <p>Perawatan Bayi</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- GAMBAR -->
+      <img src="bumil3.png" alt="Baby Shop" class="hero-img">
+
+      <!-- TESTIMONI -->
+      <div class="testimoni-box">
+
+        <h3>💖 Testimoni Customer</h3>
+
+        <div class="testi-card">
+          "Produknya lucu dan kualitasnya bagus banget!" ⭐⭐⭐⭐⭐
+        </div>
+
+        <div class="testi-card">
+          "Pengiriman cepat dan adminnya ramah 💕" ⭐⭐⭐⭐⭐
+        </div>
+
+      </div>
+
+      <br>
+
+      <!-- BUTTON -->
+      <button class="btn-shop">
+        Belanja Sekarang
+      </button>
+
+    </div>
+
+    <!-- INFO BOX -->
+    <div class="info-box">
+
+      <h3>🌟 Keunggulan The BabyBloom</h3>
+
+      <ul>
+        <li>Produk berkualitas premium</li>
+        <li>Aman untuk bayi dan balita</li>
+        <li>Harga terjangkau</li>
+        <li>Pelayanan ramah dan cepat</li>
+        <li>Tersedia pembayaran COD</li>
+      </ul>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

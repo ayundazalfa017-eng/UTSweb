@@ -1,0 +1,681 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff7f0;
+}
+
+
+.welcome-box h2,
+.profil-box h2,
+.info-box h3{
+  font-family: 'Lilita One', cursive;
+  font-size: 42px;
+  color: #ff5c93;
+
+  text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.5);
+
+  letter-spacing: 1px;
+
+  margin-bottom: 20px;
+}
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content";
+  grid-template-columns: 290px 1fr;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #ffb6c1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-image{
+  grid-area: header;
+}
+
+.header-image img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.sidebar {
+  grid-area: sidebar;
+
+  background: linear-gradient(
+    180deg,
+    #ffb6c1 0%,
+    #ffcad4 50%,
+    #ffe0e9 100%
+  );
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 4px 0 12px rgba(255, 182, 193, 0.35);
+  border-right: 3px solid rgba(255,255,255,0.5);
+}
+
+.sidebar a{
+  text-decoration: none;
+  background: rgba(255,255,255,0.75);
+  padding: 14px;
+  border-radius: 15px;
+  color: #ff4f87;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2);
+}
+
+.sidebar a:hover{
+  background: white;
+  transform: translateX(6px) scale(1.02);
+  color: #ff2f75;
+  box-shadow: 0 6px 14px rgba(255, 105, 180, 0.25);
+}
+
+.sidebar button {
+  padding: 10px;
+  border: none;
+  background-color: #ff69b4;
+}
+
+.welcome-box{
+  background: #fffdfd;
+border: 2px solid #ffd6e0;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+th{
+  background-color: #ffb6c1;
+  color: white;
+}
+
+th, td{
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.hero-img{
+  width: 55% !important;
+  max-width: 420px !important;
+  height: auto !important;
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td{
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* ===== FONT JUDUL ===== */
+h1, h2, h3{
+  font-family: 'Lilita One', cursive !important;
+  color: #ff5c93 !important;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.4);
+}
+
+.judul{
+  font-family: 'Lilita One', cursive;
+  font-size: 42px;
+  color: #ff5c93;
+  text-shadow: 2px 2px 5px rgba(255,182,193,0.5);
+}
+
+/* FOTO PRODUK */
+.produk-img{
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: contain !important;
+  background-color: white;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+/* UKURAN MENU SIDEBAR */
+.sidebar a{
+  font-size: 20px !important;
+}
+
+.sidebar h3{
+  font-size: 32px !important;
+}
+
+/* SIDEBAR GLOBAL */
+.sidebar h3{
+  font-family: 'Lilita One', cursive !important;
+  font-size: 32px !important;
+  color: #ff5c93 !important;
+}
+
+.sidebar a{
+  font-size: 20px !important;
+}
+
+.kategori-box{
+  margin-top: 30px;
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  border: 2px solid #ffd6e0;
+  box-shadow: 0 4px 12px rgba(255,182,193,0.2);
+}
+
+.kategori-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.kategori-card{
+  width: 180px;
+  background: linear-gradient(
+    180deg,
+    #fff0f5,
+    #ffe4ec
+  );
+
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(255,182,193,0.2);
+}
+
+.kategori-card:hover{
+  transform: translateY(-8px);
+  background: white;
+}
+
+.icon{
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.kategori-card p{
+  font-weight: 600;
+  color: #ff4f87;
+}
+
+.btn-shop{
+  background: linear-gradient(
+    90deg,
+    #ff6fa5,
+    #ff95bc
+  );
+
+  border: none;
+  padding: 15px 35px;
+  border-radius: 40px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 6px 15px rgba(255,105,180,0.3);
+}
+
+.btn-shop:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(255,105,180,0.4);
+}
+
+.testimoni-box{
+  margin-top: 30px;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  border: 2px solid #ffd6e0;
+}
+
+.testi-card{
+  background: #fff0f5;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+  color: #ff4f87;
+  font-style: italic;
+}
+
+/* =========================
+   PROFIL PAGE
+========================= */
+
+.profil-box{
+  background: #fffdfd;
+  padding: 30px;
+  border-radius: 25px;
+  border: 2px solid #ffd6e0;
+  box-shadow: 0 8px 20px rgba(255,182,193,0.2);
+}
+
+/* FOTO */
+.profil-img{
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #ffb6c1;
+  padding: 6px;
+  background-color: white;
+  box-shadow: 0 6px 18px rgba(255,182,193,0.4);
+  transition: 0.3s;
+}
+
+.profil-img:hover{
+  transform: scale(1.03);
+}
+
+/* JUDUL */
+.profil-title{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profil-title h2{
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.profil-title p{
+  color: #777;
+  font-size: 17px;
+}
+
+/* IDENTITAS CARD */
+.identitas-card{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card{
+  background: linear-gradient(
+    135deg,
+    #fff0f5,
+    #ffe4ec
+  );
+
+  padding: 20px;
+  border-radius: 18px;
+
+  box-shadow: 0 5px 12px rgba(255,182,193,0.15);
+
+  transition: 0.3s;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+}
+
+.card h4{
+  margin: 0;
+  color: #ff5c93;
+  font-size: 20px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.card p{
+  margin-top: 8px;
+  color: #555;
+  font-size: 15px;
+}
+
+/* TABEL */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+th{
+  background-color: #ffb6c1;
+  color: white;
+}
+
+th, td{
+  padding: 14px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+
+tr:hover{
+  background-color: #fff5f8;
+}
+
+/* DESKRIPSI */
+.deskripsi{
+  margin-top: 30px;
+  line-height: 1.9;
+  text-align: justify;
+
+  background-color: #fff7fa;
+  padding: 25px;
+  border-radius: 18px;
+
+  border-left: 6px solid #ffb6c1;
+}
+
+.deskripsi p{
+  margin-bottom: 18px;
+  color: #555;
+}
+
+/* HOBBY */
+.hobby-box{
+  margin-top: 30px;
+}
+
+.hobby-title{
+  margin-bottom: 15px;
+}
+
+.hobby-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hobby-card{
+  background: white;
+  border: 2px solid #ffd6e0;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255,182,193,0.15);
+
+  transition: 0.3s;
+}
+
+.hobby-card:hover{
+  transform: scale(1.05);
+  background-color: #fff0f5;
+}
+
+/* ===== FAQ BOX ===== */
+.faq-box{
+  background: #fffdfd;
+  border: 2px solid #ffd6e0;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.2);
+}
+
+/* JUDUL FAQ */
+.faq-box h2{
+  font-size: 42px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* DESKRIPSI FAQ */
+.faq-desc{
+  text-align: center;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* FAQ CARD */
+.faq-card{
+  background: #fff0f5;
+  border-radius: 18px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  border-left: 8px solid #ffb6c1;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(255,182,193,0.15);
+}
+
+.faq-card:hover{
+  transform: translateY(-3px);
+  background: #ffe4ec;
+}
+
+/* PERTANYAAN */
+.faq-question{
+  font-size: 20px;
+  color: #ff4f87;
+  margin-bottom: 10px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* JAWABAN */
+.faq-answer{
+  color: #666;
+  line-height: 1.7;
+}
+
+/* FOTO FAQ */
+.faq-img{
+  width: 70%;
+  max-width: 500px;
+  border-radius: 20px;
+  margin-top: 25px;
+  box-shadow: 0 6px 15px rgba(255,182,193,0.25);
+}
+
+/* BOX BANTUAN */
+.help-box{
+  margin-top: 30px;
+  background: linear-gradient(135deg, #ffd6e7, #fff0f5);
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.help-box h3{
+  margin-bottom: 10px;
+}
+
+.help-box p{
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* TOMBOL FAQ */
+.btn-faq{
+  display: inline-block;
+  background: #ff69b4;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-faq:hover{
+  background: #ff4f87;
+  transform: scale(1.05);
+}
+
+/* ===== KONTAK BOX ===== */
+.kontak-box{
+  background: #fffdfd;
+  border: 2px solid #ffd6e0;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255,182,193,0.2);
+}
+
+/* DESKRIPSI */
+.deskripsi{
+  text-align: center;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* CONTAINER CARD */
+.kontak-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+/* CARD */
+.kontak-card{
+  background: #fff0f5;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 12px rgba(255,182,193,0.15);
+}
+
+.kontak-card:hover{
+  transform: translateY(-5px);
+  background: #ffe4ec;
+}
+
+/* ICON */
+.kontak-icon{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* JUDUL CARD */
+.kontak-card h4{
+  color: #ff4f87;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* HUBUNGI BOX */
+.hubungi-box{
+  background: linear-gradient(135deg,#ffd6e7,#fff0f5);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* SOSMED */
+.sosmed-container{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* BUTTON SOSMED */
+.sosmed-button{
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* WARNA */
+.wa{
+  background: #25D366;
+}
+
+.ig{
+  background: #ff5c93;
+}
+
+.email{
+  background: #ff9f43;
+}
+
+/* HOVER */
+.sosmed-button:hover{
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+/* JAM */
+.jam{
+  margin-top: 20px;
+  background: #ffe4ec;
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* MAP */
+.map-box{
+  margin-top: 35px;
+  text-align: center;
+}
+
+.map-img{
+  width: 75%;
+  max-width: 500px;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 8px 18px rgba(255,182,193,0.2);
+}
+
+.kontak-box h2{
+  font-size: 42px !important;
+}
+
+.kontak-box h3{
+  font-size: 32px !important;
+}
+
+/* MENU TITLE TRANSPARAN */
+.sidebar .menu-title{
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 0 10px 0 !important;
+  border-radius: 0 !important;
+  display: block !important;
+}
+
+/* HOVER MENU TITLE */
+.sidebar .menu-title:hover{
+  background: transparent !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* TEXT MENU */
+.sidebar .menu-title h3{
+  margin: 0;
+  padding: 0;
+  color: #ff5c93;
+  font-size: 32px;
+}

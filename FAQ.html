@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - The BabyBloom</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    /* =========================
+       SIDEBAR MENU TITLE
+    ========================= */
+
+    .menu-title{
+      text-decoration: none;
+      background: transparent !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .menu-title h3{
+      background: transparent !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin: 0;
+      color: #ff5c93;
+      font-size: 28px;
+      font-family: 'Lilita One', cursive;
+    }
+
+    .menu-title:hover{
+      background: transparent !important;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+
+    /* =========================
+       FAQ BOX
+    ========================= */
+
+    .faq-box{
+      background: #fffdfd;
+      border: 2px solid #ffd6e0;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(255,182,193,0.18);
+    }
+
+    .faq-box h2{
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .faq-desc{
+      font-size: 17px;
+      line-height: 1.8;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    /* =========================
+       FAQ CARD
+    ========================= */
+
+    .faq-card{
+      background: linear-gradient(
+        135deg,
+        #fff0f5,
+        #ffe4ec
+      );
+
+      border-radius: 20px;
+      padding: 22px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(255,182,193,0.2);
+      transition: 0.3s;
+    }
+
+    .faq-card:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 10px 22px rgba(255,105,180,0.25);
+    }
+
+    .faq-question{
+      font-size: 22px;
+      color: #ff4f87;
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .faq-answer{
+      color: #666;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    /* =========================
+       FAQ CONTACT
+    ========================= */
+
+    .faq-contact{
+      background: linear-gradient(
+        135deg,
+        #ffd6e0,
+        #ffeaf0
+      );
+
+      padding: 20px;
+      border-radius: 18px;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .faq-contact h3{
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .faq-contact p{
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    /* =========================
+       BUTTON
+    ========================= */
+
+    .faq-btn{
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(
+        135deg,
+        #ff6fa5,
+        #ff4f87
+      );
+
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(255,105,180,0.3);
+    }
+
+    .faq-btn:hover{
+      transform: scale(1.05);
+      background: linear-gradient(
+        135deg,
+        #ff4f87,
+        #ff2f75
+      );
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header-image">
+    <img src="Desain tanpa judul.png" alt="The BabyBloom Header">
+  </header>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+
+    <!-- MENU TITLE -->
+    <a href="index.html" class="menu-title">
+      <h3>📋 Menu</h3>
+    </a>
+
+    <!-- MENU -->
+    <a href="profil.html">👩 Data Pribadi</a>
+
+    <a href="produk1.html">🍼 Produk 0-12 Bulan</a>
+
+    <a href="produk2.html">🧸 Produk 13-24 Bulan</a>
+
+    <a href="kontak.html">📞 Kontak Penjual</a>
+
+    <a href="faq.html">❓ FAQ</a>
+
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <div class="faq-box">
+
+      <h2>❓ Frequently Asked Questions</h2>
+
+      <p class="faq-desc">
+        Berikut beberapa pertanyaan yang sering ditanyakan customer 
+        mengenai produk dan layanan di <b>The BabyBloom</b>. ✨
+      </p>
+
+      <!-- FAQ 1 -->
+      <div class="faq-card">
+
+        <div class="faq-question">
+          🍼 Apakah produk aman untuk bayi?
+        </div>
+
+        <div class="faq-answer">
+          Ya, seluruh produk menggunakan bahan berkualitas 
+          dan aman untuk bayi maupun balita.
+        </div>
+
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-card">
+
+        <div class="faq-question">
+          🚚 Berapa lama proses pengiriman?
+        </div>
+
+        <div class="faq-answer">
+          Pengiriman biasanya membutuhkan waktu sekitar 
+          2–5 hari kerja tergantung lokasi tujuan.
+        </div>
+
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-card">
+
+        <div class="faq-question">
+          💳 Apakah tersedia pembayaran COD?
+        </div>
+
+        <div class="faq-answer">
+          Tentu saja ✨ Kami menyediakan pembayaran 
+          Cash On Delivery (COD) untuk area tertentu.
+        </div>
+
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-card">
+
+        <div class="faq-question">
+          🔄 Apakah bisa melakukan retur barang?
+        </div>
+
+        <div class="faq-answer">
+          Bisa 💕 Retur barang dapat dilakukan maksimal 
+          3 hari setelah barang diterima dengan syarat tertentu.
+        </div>
+
+      </div>
+
+      <!-- CONTACT -->
+      <div class="faq-contact">
+
+        <h3>📞 Masih Ada Pertanyaan?</h3>
+
+        <p>
+          Jangan ragu untuk menghubungi admin 
+          The BabyBloom kapan saja 💖
+        </p>
+
+        <a href="kontak.html" class="faq-btn">
+          Hubungi Kami
+        </a>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>
